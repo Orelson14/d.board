@@ -10,7 +10,7 @@ export default function TopRegionCard() {
   ];
 
   return (
-    <div className="w-96 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] sm:p-6">
+    <div className="w-full sm:w-96 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] sm:p-6">
       <div className="flex justify-between">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">Top Region</h3>
         <MoreDotIcon className="text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 size-6" />

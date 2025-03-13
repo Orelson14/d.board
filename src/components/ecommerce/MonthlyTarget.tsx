@@ -3,7 +3,7 @@ import { Info } from "lucide-react";
 
 export default function DeviceStats() {
   return (
-    <div className="w-96 bg-white rounded-2xl p-6 border border-gray-200 dark:border-gray-800 dark:bg-white/[0.03]">
+    <div className="w-full sm:w-96 bg-white rounded-2xl p-6 border border-gray-200 dark:border-gray-800 dark:bg-white/[0.03]">
       {/* Header */}
       <div className="flex justify-between items-center">
         <span className="text-gray-600 dark:text-gray-400 text-base font-semibold">Total Devices</span>
