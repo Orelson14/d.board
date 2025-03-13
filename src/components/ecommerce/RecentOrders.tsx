@@ -36,16 +36,17 @@ export default function ProductDashboard() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
         <h2 className="text-3xl font-semibold">Your Products</h2>
-        <div className="flex gap-3 mt-4 sm:mt-0">
-          <div className="relative shadow-lg">
+        <div className="flex gap-3 mt-4 sm:mt-0 w-full sm:w-auto">
+          <div className="relative shadow-lg w-full sm:w-auto">
             <Search className="absolute left-3 top-3 text-gray-400 w-5 h-5" />
             <input
               type="text"
+              disabled
               placeholder="Search..."
-              className="pl-10 pr-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="pl-10 pr-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 w-full"
             />
           </div>
-          <button className="flex items-center shadow-lg gap-2 px-4 py-2 border rounded-md hover:bg-gray-100">
+          <button className="flex items-center shadow-lg gap-2 px-4 py-2 border rounded-md hover:bg-gray-100 w-full sm:w-auto mt-2 sm:mt-0">
             <Filter className="w-5 h-5" /> Filter
           </button>
         </div>
@@ -67,22 +68,22 @@ export default function ProductDashboard() {
       </div>
 
       {/* Stats Grid */}
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Product Stats */}
         <div className="p-5 border rounded-lg shadow-sm">
           <p className="text-gray-600 flex items-center gap-1 border-b pb-2">
             <Eye className="w-5 h-5 text-gray-400" /> Product views:
             <span className="font-semibold">1,389</span>
           </p>
-          <p className="text-gray-600 flex items-center gap-1 border-b pb-2">
-            <MousePointerClick className="w-5 h-5 text-gray-400" /> Total clicks:
+          <p className="text-gray-600 flex items-center gap-2 border-b pb-2">
+            <MousePointerClick className="w-5 h-5 text-gray-400" />Total clicks:
             <span className="font-semibold">1,269</span>
           </p>
           <p className="text-gray-600 flex items-center gap-1 border-b pb-2">
             <Globe className="w-5 h-5 text-gray-400" /> Network clicks:
             <span className="font-semibold">839</span>
           </p>
-          <p className="text-gray-600 flex items-center gap-1">
+          <p className="text-gray-600 flex items-center gap-3">
             <MonitorCheckIcon className="w-5 h-5 text-gray-400" /> Clicks ratio:
             <span className="font-semibold">97%</span>
           </p>

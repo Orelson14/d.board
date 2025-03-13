@@ -5,14 +5,14 @@ export default function EcommerceMetrics() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-bold text-gray-900">Dashboard</h2>
-        <div className="flex gap-2">
-          <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 border rounded-lg bg-white shadow-sm hover:bg-gray-50">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2 sm:mb-0">Dashboard</h2>
+        <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
+          <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 border rounded-lg bg-white shadow-sm hover:bg-gray-50 w-full sm:w-auto">
             <Calendar size={16} />
             Calendar
           </button>
-          <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 border rounded-lg bg-white shadow-sm hover:bg-gray-50">
+          <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 border rounded-lg bg-white shadow-sm hover:bg-gray-50 w-full sm:w-auto">
             <Download size={16} />
             Export
           </button>
@@ -20,7 +20,7 @@ export default function EcommerceMetrics() {
       </div>
 
       {/* Metrics */}
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-4">
         {/* Total Sales */}
         <div className="flex-1 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] md:p-6">
           <div className="flex items-center justify-between">
